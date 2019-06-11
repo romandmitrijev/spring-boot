@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cities</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>CityName</th>
+        <th>latitude</th>
+        <th>longitude</th>
+    </tr>
+    <tr th:each="city : ${cities}">
+        <td th:text="${city.name}"></td>
+        <td th:text="${city.latitude}"></td>
+        <td th:text="${city.longitude}"></td>
+    </tr>
+</table>
+<strong><a href="/">Click here to go back</a></strong>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Cities</title>
+</head>
+<body>
+<form action="#" th:action="@{/city/frontend/add}" th:object="${city}" method="post">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+    <label for="latitude">Latitude</label>
+    <input type="text" th:field="*{latitude}" id="latitude" placeholder="Latitude">
+    <label for="longitude">Longitude</label>
+    <input type="text" th:field="*{longitude}" id="longitude" placeholder="Longitude">
+    <input type="submit" value="Add City">
+</form>
+<strong><a href="/">Click here to go back</a></strong>
+</body>
+</html>

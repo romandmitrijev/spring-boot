@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    username: root
+    password: spirit11
+    url: jdbc:mysql://localhost:3306/sda_test_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
